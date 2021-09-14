@@ -1,10 +1,13 @@
 <?php
-
+ob_start();
 include "db.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
 $records = mysqli_query($conn,"select * from orders where orderid = '$id'"); // delete query
+$count=mysqli_num_rows($records);
+if($count>0)
+{
 while($data = mysqli_fetch_array($records))
 {
    $name= $data['name'];
@@ -32,11 +35,15 @@ if($res)
 {
      // Close connection
     $del=mysqli_query($conn,"delete from orders where orderid = '$id'");
-    header("location:list.php"); // redirects to all records page
+    header("Location: list.php"); // redirects to all records page
     exit;	
 }
 else
 {
     echo "Error deleting record"; // display error message if not delete
+}
+}
+else{
+    header("Location: list.php");
 }
 ?>
