@@ -20,7 +20,7 @@ in each field.
 ## INSTALLATION INSTRUCTIONS
 * Install XAMPP or WAMPP.
 * Open the XAMPP Control panel and start [apache] and [mysql] .
-* Download project from github() OR follow git bash commands
+* Download project from github(https://sathana-v.github.io/Clean-and-Shine/) OR follow git bash commands
   cd C:\xampp\htdocs\
   git clone 
 * extract files in C:\xampp\htdocs.
