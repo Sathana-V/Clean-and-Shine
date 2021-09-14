@@ -36,15 +36,20 @@
 * **Admin login details** username = admin Password=123@admin
 
 ## TECHNOLOGIES USED
-HTML, CSS, Java Script, PHP, mysql
+
+
 **Front -end:**
 HTML
 CSS
 SCSS
 JAVASCRIPT
 BOOTSTRAP
+
+
 **Back-end**
    PHP
+   
+   
 **Database**
   SQL
 
