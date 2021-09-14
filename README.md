@@ -1,5 +1,5 @@
 
-# Clean and Shine
+# Clean and Shine Services
 
 **HouseHold Booking System**
 
