@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Clean and Shine Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+	.checked
+	{
+		color:orange;
+	}
+	
+    @media only screen and (max-width: 770px) {
+  .review
+  {
+      display: none;
+  }
+}
+    .rating_circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    border: 1px none;
+	color:white;
+    background-color:#021c3c;
+    font-size: 35px;
+  }
+  .rating_text{
+      margin-top: 38px;
+  }
+  .stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+content: "\f005 \f005 \f005 \f005 \f005";
+color: #000000;
+}
+.dark {
+    background-color: orange;
+}
+    .card img{
+        height:200px;
+    }
+    .card a{
+        margin-top:20px;
+        margin-bottom:20px;
+        width:40%;
+        align-items: center;
+        text-align: center;
+        margin-left:30%;
+    }
+    .card h5{
+        margin-top:15px;
+        text-align: center;
+    }
+     .card-body
+    {
+        text-align:justify;
+        height:150px;
+    }
+    .card {
+      
+        height:530px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+</style>
+<script>
+    $(document).ready(function(){
+    var ratings = 4.1;
+    var starTotal = 5;
+    var starPercentage = ratings / starTotal * 100;
+    var star = starPercentage+'%';
+    $(".stars-inner").width(star);
+});
+</script>
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+       
+
+        <!-- Navbar Area -->
+        <div class="credit-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="creditNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    
+                                    <li><a href="services.html">Services</a></li>
+                                   
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="contact">
+                            <a href="#"><img src="img/core-img/call2.png" alt=""> +800 49 900 900</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/13.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Services</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="services.html">Service</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Services Area Start ###### -->
+    <section class="services-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center mb-100">
+                        <div class="line"></div>
+                        <p>Take look at our</p>
+                        <h2>Our services</h2>
+                    </div>
+                </div>
+            </div>
+           
+            
+            
+          
+            <div class="row">
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz4eYHNVaUkhzDa_XTMFCBjCUScBXrX_WqA&usqp=CAU" alt="Card image cap">
+                                <h5 class="card-title">Kitchen Services</h5>
+                                <p class="card-text">  Clean & Shine housekeepers thoroughly clean your kitchen to remove all dirt, debris and grime that may have been left behind.</p>
+                            
+                                   </div>
+                                   <a style="margin-top: 10px;" href="kitchen.html" class="btn btn-primary">Read More</a>
+                        
+                        </div>
+                       
+                    </div>
+                </div>
+          
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://img1.exportersindia.com/product_images/bc-full/dir_116/3455103/swimming-pool-cleaning-services-1490178090-2773738.jpeg" alt="Card image cap">
+                                <h5 class="card-title">Swimming pool</h5>
+                                <p class="card-text"> The pools manufactured by us are designed in compliance with industry standards keeping in mind the safety of the swimmers.</p>
+                                  </div>
+                                <a style="margin-top: 10px;" href="swimming.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://i1.wp.com/goto4gardening.co.uk/wp-content/uploads/2019/02/woman-in-garden.jpg?fit=448%2C298&ssl=1" alt="Card image cap">
+                                <h5 class="card-title">Garden cleaning</h5>
+                                <p class="card-text"> Our professionals check all the quality parameters and perform the service in an excellent manner. 
+                                    Moreover, this service can be availed by our clients at most reasonable price.</p>
+                                  </div>
+                                <a style="margin-top: 10px;" href="garden.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWgPSxX_XzvfstgRxImZBzRNXpd3fo1vvEg&usqp=CAU" alt="Card image cap">
+                                <h5 class="card-title">Furniture cleaning</h5>
+                                <p class="card-text"> Our technicians cleans virtually every type of upholstery including leather, suede, microfiber and vinyl.
+                                     Before beginning  our technicians inspects each piece of furniture to create a custom cleaning plan. </p>
+                                  </div>
+                                <a style="margin-top: 10px;" href="furniture.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://5.imimg.com/data5/LV/NL/MY-3299963/waterproofing-contract-for-roof-500x500.jpg" alt="Card image cap">
+                                <h5 class="card-title">Water proof cleaning</h5>
+                               
+                                <p class="card-text"> our proficient workforce executes these coating services by making use of best coating material.
+                                     We provide these coating services to patrons on demand at affordable rates.</p>
+                                </div>
+                                <a style="margin-top: 10px;" href="waterproof.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+                                <h5  class="card-title">Tile cleaning</h5>
+                               <p class="card-text">Using specialised and powerful deep-cleaning extraction equipment,Our technicians
+                                    penetrate deep inside the porous surfaces to remove the bacteria that can spread germs, eliminate grime and seal out dirt. </p>
+                             </div>
+                                <a style="margin-top: 10px;" href="tile.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://smarterpestcontrol.com/wp-content/uploads/2017/09/shutterstock_140634028-500x300.jpg" alt="Card image cap">
+                               <h5 class="card-title">Restroom cleaning</h5>
+                                <p class="card-text"> Clean & Shine thoroughly cleans all surfaces throughout the bathroom. This includes wiping down windowsills, baseboards, blinds and more.  </p>
+                                </div>
+                                <a style="margin-top: 10px;" href="restroom.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex mb-100">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="https://5.imimg.com/data5/TD/PM/FA/SELLER-90604736/marble-polishing-service-500x500.jpg" alt="Card image cap">
+                               <h5 class="card-title">Polishing</h5>
+                                <p class="card-text">We offer polishing service of all kinds of wooden furniture and floor
+
+                           Our carpenter and polishing experts are highly skilled and furniture polished by our experts makes your furniture stand out from the rest</p>
+                                </div>
+                                <a style="margin-top: 10px;" href="polishing.html" class="btn btn-primary">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+
+                
+
+            </div>
+        </div>
+    </section>
+  
+    <!-- ##### Services Area End ###### -->
+
+    <!-- ##### Special Feature Area Start ###### -->
+    <section class="special-feature-area d-flex flex-wrap">
+        <!-- Special Feature Content -->
+        <div class="special-feature-content section-padding-100">
+            <div class="feature-text">
+                <!-- Section Heading -->
+                <div class="section-heading white mb-50">
+                    <div class="line"></div>
+                    <p>Clean and Shine policies</p>
+                    <h2>Consistently Delightful</h2>
+                </div>
+                <h6>Excellence is our goal, even for something as simple as getting your price right on our website. Now more than ever you should look for a professional service that has always committed to delivering great results and exceeding your expectations.</h6>
+                <a href="#" class="btn credit-btn btn-2 box-shadow">Explore</a>
+            </div>
+        </div>
+        <!-- Special Feature Thumbnail -->
+        <div class="special-feature-thumbnail bg-img jarallax" style="background-image: url('https://cleaningexcellence.weebly.com/uploads/1/1/1/1/111182031/contemporary-kitchen_1_orig.jpg');"></div>
+    </section>
+    <!-- ##### Special Feature Area End ###### -->
+
+    <!-- ##### Special Feature Area Start ###### -->
+    <section class="special-feature-area style-2 d-flex flex-wrap">
+        <!-- Special Feature Thumbnail -->
+        <div class="special-feature-thumbnail bg-img jarallax" style="background-image: url('https://workers-direct.com/public/assets/images/page-pictures/Cleaners/cleaners_1.jpeg');"></div>
+        <!-- Special Feature Content -->
+        <div class="special-feature-content section-padding-100">
+            <div class="feature-text">
+                <!-- Section Heading -->
+                <div class="section-heading white mb-50">
+                    <div class="line"></div>
+                    <p>Clean and Shine Workers</p>
+                    <h2>Trusted Proffesionals</h2>
+                </div>
+                <h6>We hire and train kind and skilled experts who are committed to making your home shine. We have developed industry-leading processes and practices that bring you safety, happiness, and convenience.</h6>
+                <a href="#" class="btn credit-btn box-shadow">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Special Feature Area End ###### -->
+
+    <!-- ##### FAQ Area Start ###### -->
+    <section class="credit-faq-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- FAQ Area -->
+                <div class="col-12 col-lg-6">
+
+                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!-- single accordian area -->
+                        <div class="panel single-accordion">
+                            <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How can I hire Clean and shine workers without knowing about them ?
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a></h6>
+                            <div id="collapseOne" class="accordion-content collapse show">
+                                <p> Each member of our team undergoes extensive vetting and a thorough training process upon hiring and are fully insured for your protection.
+                                     Best of all, you never have to worry about paying payroll taxes or reporting wages to the IRS. </p>
+                            </div>
+                        </div>
+                        <!-- single accordian area -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Does this service have warrenty?
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        </a>
+                            </h6>
+                            <div id="collapseTwo" class="accordion-content collapse">
+                                <p>This promise is meant to provide you with peace of mind. If you’re ever dissatisfied with any aspect of our recent services, just give us a call within 24 hours and we’ll resolve the problem at no additional cost to you. We take your satisfaction seriously.</p>
+                            </div>
+                        </div>
+                        <!-- single accordian area -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Does prices are affordable
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a>
+                            </h6>
+                            <div id="collapseThree" class="accordion-content collapse">
+                                <p>We do everything we can to make our services as affordable as possible. Our budget flexibility extends all the way to employing the right
+                                     amount of help at the right times to make a positive difference in our customers’ lives. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Area -->
+                <div class="col-12 col-md-6">
+                    <div class="add-area mb-100">
+                        <a href="#"><img src="https://betterlifemaids.com/wp-content/uploads/2020/09/blm-cleaner.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- FAQ Area -->
+           
+            <div class="col-12 col-lg-6">
+                <img height="10%" style="  transform: scaleX(-1);"src="https://www.pngkey.com/png/full/362-3628974_looking-to-automate-invoices-students-png-images-hd.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="star" style="text-align: center;font-size: 1.3rem;padding-top:60px">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p style="padding-top:30px;">I had a great experience with the team that came to my home on October 4th. They were very professional and cheerful and the floors of my home have never been so clean. It was worth the investment and such a positive experience. I was very confident that this group would be able to get the job done, and they did not disappoint.</p>
+                <h4 style="text-align: right;"> -   Shoniya</h4>
+                <p style="text-align: right;">(Happy customer)</p>
+            </div>
+ 
+         </div>
+    </div>
+    <div class="container" style="margin-top:5%; margin-bottom:3%;">
+        <h2>
+         A house cleaning service designed for your happiness</h2>
+         <div class="row">
+             <div class="col-12 col-lg-6">
+               <p style="padding-top:45px"> Clean and Shine Maids is committed to helping you spend more time on what matters most, this is our singular goal and promise to you.
+                    As one of the finest cleaning companies and a leader in the industry, we enjoy bringing a consistently delightful service
+                     that sets the standard for health and safety. Our team employs proven yet innovative processes and practices, all designed to
+                      improve the quality of your life and keep your family and pets safe. We are known and loved for the eco-friendly cleaning services.
+        
+               </p>
+             </div>
+             <div class="col-12 col-lg-6">
+                <div class="card mt-5 review" style="height:250px; z-index:200;">
+                    <div class="card-body" >
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 style="color: black;text-align:center">Reviews</h2>
+                                <button class="rating_circle">4.1</button>
+                                <div style="font-size: 1.3rem;">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="progress mt-5" style="height:10px">
+                                   <div class="progress-bar dark" style="width:70%;height:10px;color:orange"></div>
+                                </div>
+                                <div class="progress mt-3" style="height:10px">
+                                    <div class="progress-bar dark" style="width:10%;height:10px"></div>
+                                </div>
+                                <div class="progress mt-3" style="height:10px">
+                                    <div class="progress-bar dark" style="width:10%;height:10px"></div>
+                                </div>
+                                <div class="progress mt-3" style="height:10px">
+                                    <div class="progress-bar dark" style="width:5%;height:10px"></div>
+                                </div>
+                                <div class="progress mt-3" style="height:10px">
+                                    <div class="progress-bar dark" style="width:5%;height:10px"></div>
+                                </div>                
+                            </div>
+                            <div class="col-md-1">
+                                <div class="row">
+                                    <h6 class="rating_text">5</h6>
+                                </div>
+                                <div class="row">
+                                    <h6 class="">4</h6>
+                                </div>
+                                <div class="row">
+                                    <h6 class="">3</h6>
+                                </div>
+                                <div class="row">
+                                    <h6 class="">2</h6>
+                                </div>
+                                <div class="row">
+                                    <h6 class="">1</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+         </div>
+        
+    </div>
+    <div class="container" style="margin-bottom: 3%;">
+        <div class="row" style="align-items: center; text-align: center;">
+            <div class="col-sm-12 col-lg-12">
+               <button style="width:250px;height:50px;font-size:1.3rem" class="btn btn-primary"><a href="form.html">Book Now</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- ##### FAQ Area End ###### -->
+
+    <!-- ##### Newsletter Area Start ###### -->
+    <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(img/bg-img/6.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="nl-content text-center">
+                        <h2>Subscribe to our newsletter</h2>
+                        <form action="#" method="post">
+                            <input type="email" name="nl-email" id="nlemail" placeholder="Your e-mail">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                       <p>Subscribe and keep in touch with us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ###### -->
+
+      <footer class="footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Footer Widget -->
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">About Us</h5>
+                                        <!-- Nav -->
+                                        <nav>
+                                            <ul>
+                                                <li><a href="index.html">Homepage</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="services.html">Services &amp; Offers</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                <!-- Single Footer Widget -->
+                                <div class="col-12 col-sm-6 col-lg-6">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">Contact us</h5>
+                                        <div class="row">
+                                            
+                                            <div class="col-3">
+                                                <span style="font-size: 8rem; margin-top:0px;padding-top:-40px;color:white"><i class="fa fa-globe"></i></span>
+                                            </div>
+                                            <div class="col-9">
+                                                <nav>
+                                                    <ul style="color:white;font-size: 1rem; padding-top:50px">
+                                                        
+                                                    
+                                                        <li>2/7890 kumar nagar </li>
+                                                        <li>Near high school</li>
+                                                        <li>Tirupur</li>
+                                                        <li>TamilNadu -675890</li>
+                                                    
+                                                    </ul>
+                                                
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <!-- Nav -->
+                                        
+                                    
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">Follow us</h5>
+                                   <div class="div" style="margin-top:2rem; padding-top:2rem; cursor:pointer">
+                                    <span  style="color: white; font-size: 1.2rem; ">
+                                        <i style="margin-left:10px;" class="fa fa-whatsapp fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-facebook fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-instagram fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-youtube fa-3x"></i>
+                                    </span>
+                                   </div>
+                                     
+                                    </div>
+                                </div>
+
+               
+                  
+            </div>
+        </div>
+
+       
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

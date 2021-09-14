@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Title -->
+	<title>Clean and Shine Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+	.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+		.btnn {
+  background: #003679;
+  background-image: -webkit-linear-gradient(top, #003679);
+  background-image: -moz-linear-gradient(top, #003679);
+  background-image: -ms-linear-gradient(top, #003679);
+  background-image: -o-linear-gradient(top, #003679);
+  background-image: linear-gradient(to bottom, #003679);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+		.serviceimage
+		{
+			height:200px;
+		}
+		.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+		.rating
+		{
+			height:80px;
+		}
+		.testimonial
+		{
+			margin:90px;
+			text-align:center;
+			padding:30px;
+			
+		}
+		.textimonialtext
+		{
+			padding:30px;
+			line-height:2;
+			width:40%;
+			text-align:center;
+			margin: 0 auto;
+		}
+		.textimonialimg
+		{
+				width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+		}
+		
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+	.feature
+		{
+			padding:30px;
+			font-family: 'Roboto', sans-serif;
+			line-height:2;
+			margin:5px;
+			text-align:center;
+			color:#000;
+			font-size:30px;
+		}
+	.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.servicecard{
+	height:27rem;
+	width:20rem;
+	padding:1rem;
+		}
+
+.counter-box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -4px #66676c;
+	text-align:center;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+.services-area 
+		{
+			text-align:center;
+		}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+		}
+		
+
+	/*carousel*/
+		
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+		.imgBox:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+		  transform: scale(1.1);
+    }
+		   .imgBox {
+        transform:scale(0.9);
+        transition: 0.5s all ease-in-out;
+    }
+       
+  
+      
+	</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+  <header class="header-area">
+        <!-- Top Header Area -->
+       
+
+        <!-- Navbar Area -->
+        <div class="credit-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="creditNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    
+                                    <li><a href="services.html">Services</a></li>
+                                   
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="contact">
+							 
+                            <a href="#"><img src="img/core-img/call2.png" alt=""> +800 49 900 900</a>
+							 <button  onclick="window.location.href='login.php'" class="btnn" >Admin Login</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <div class="hero-slideshow owl-carousel">
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/1_1.jpg);"></div>
+                <!-- Welcome Text -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="welcome-text text-center">
+                              
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Enjoy safer house <span>CLeaning service</span> now</h2>
+                                <p data-animation="fadeInUp" data-delay="500ms">We bring you a maid service designed to enhance your quality of life  House cleaning for health and safety is the heart of what we do at Better Life Maids.</p>
+                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Duration Indicator -->
+                <div class="slide-du-indicator"></div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/1_2.jpg);"></div>
+                <!-- Welcome Text -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="welcome-text text-center">
+                             
+                                <h2 data-animation="fadeInDown" data-delay="300ms">Top <span>Rated</span> Cleaning Service</h2>
+                                <p data-animation="fadeInDown" data-delay="500ms">Safer and healthier house cleaning for family, pets, and the planet. We will send only the best screened and trained professionals to your home</p>
+                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInDown" data-delay="700ms">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Duration Indicator -->
+                <div class="slide-du-indicator"></div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/1_3.jpg);"></div>
+                <!-- Welcome Text -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="welcome-text text-center">
+                             
+                                <h2 data-animation="fadeInUp" data-delay="300ms">get delightful <span>Customer Service</span> now</h2>
+                                <p data-animation="fadeInUp" data-delay="500ms">When you work with us, we promise and guarantee 100% satisfaction. Count on us to provide you with a maid service that meets and exceeds expectations.</p>
+                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Duration Indicator -->
+                <div class="slide-du-indicator"></div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/1_4.jpg);"></div>
+                <!-- Welcome Text -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="welcome-text text-center">
+                               
+                                <h2 data-animation="fadeInDown" data-delay="300ms">bringing <span>positive impact</span> </h2>
+                                <p data-animation="fadeInDown" data-delay="500ms">Giving back to the communities we serve is a core value of Better Life Maids. We are dedicated to making your life better, cleaner, and healthier.</p>
+                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInDown" data-delay="700ms">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Duration Indicator -->
+                <div class="slide-du-indicator"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+
+ <div class="container " data-wow-delay="400ms">
+	 
+                        <div class="line"></div>
+    
+     <div class="feature">
+            <h2>Features</h2>
+            <p>Our  Cleaning Service has been cleaning homes for 20 years . Our cleaning prices are honest, fair, and reasonable. We provide professional cleaning services that will give your home a fresh new look and feel that you deserve, especially after a long day of work.
+It is a trusted, fully-licensed and insured cleaning company .
+		  </p>
+        </div>
+
+        <div class="row  ">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 ">
+                <div class="counter-box">
+                    <i class="fas fa-broom"></i>
+                    <h2 class="counter">215</h2>
+                    <h4>SERVICES</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="counter-box">
+                    <i class="fas fa-users"></i>
+                    <h2 class="counter">200</h2>
+                    <h4>HAPPY CLIENTS</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="counter-box">
+                  <i class="fas fa-city"></i>
+                    <h2 class="counter">20</h2>
+                    <h4>Cities</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="counter-box">
+                    <i class="fas fa-award"></i>
+                    <h2 class="counter">56</h2>
+                    <h4>AWARDS</h4>
+                </div>
+			</div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
+
+
+    <!-- ##### Services Area Start ###### -->
+    <section class="services-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="line"></div>
+                        <p>Take look at our</p>
+                        <h2>Our services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
+                       <div class="card servicecard" >
+      <img src="img/bg-img/kitchen.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kitchen Cleaning </h5>
+		  <p class="card-text"> Ratings</p>
+		    <img src="img/bg-img/rating.jpg" class="rating">
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
+                         <div class="card servicecard">
+      <img src="img/bg-img/swimmingpool.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Swimming Pool cleaning </h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg"  class="rating" >
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="card servicecard">
+							
+ 
+								 <img src="img/bg-img/garden.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Garden cleaning</h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg"  class="rating">
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="card servicecard">
+      <img src="img/bg-img/furniture.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Furniture Cleaning</h5>
+		  <p class="card-text">Ratings</p>
+		  <img src="img/bg-img/rating.jpg"  class="rating">
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="card servicecard">
+      <img src="img/bg-img/toilet.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Restroom cleaning</h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg" class="rating" >
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="card servicecard">
+      <img src="img/bg-img/glass.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tiles and glass Cleaning</h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg" class="rating">
+      </div>
+    </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+				
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="card servicecard">
+      <img src="img/bg-img/waterproof.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Water Proof cleaning</h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg"  class="rating">
+      </div>
+    </div>
+					</div>
+                </div>
+  <!-- Single Service Area -->
+				
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="700ms">
+                       <div class="card servicecard">
+      <img src="img/bg-img/polishing.jpg" class="card-img-top serviceimage imgBox" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Polishing</h5>
+		  <p class="card-text">Ratings</p>
+		    <img src="img/bg-img/rating.jpg" class="rating" >
+      </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Services Area End ###### -->
+	
+ <div class="container">
+	  <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="line"></div>
+                        <p>Take look at our</p>
+                        <h2>Our Gallary</h2>
+                    </div>
+    <div class="row">
+      <div class="column">
+     <img src="img/bg-img/2_1.jpg" class="hover06 imgBox">
+	   <figure>  <img src="img/bg-img/2_2.jpg" class="hover06 imgBox"></figure>
+		  <figure>     <img src="img/bg-img/2_3.jpg" class="hover06 imgBox"></figure>
+		  <figure>     <img src="img/bg-img/2_4.jpg" class="hover06 imgBox"></figure>
+      </div>
+      <div class="column">
+           <figure>  <img src="img/bg-img/2_5.jpg" class="hover06 imgBox"></figure>
+		   <figure>    <img src="img/bg-img/2_6.jpg" class="hover06 imgBox"></figure>
+		   <figure>    <img src="img/bg-img/2_7.jpg" class="hover06 imgBox"></figure>
+		<figure>  <img src="img/bg-img/2_11.jpg" class="hover06 imgBox"></figure>
+      </div>
+      <div class="column">
+          
+		  <figure> <img src="img/bg-img/2_8.jpg" class="hover06 imgBox"></figure>
+		    <figure>   <img src="img/bg-img/2_9.jpg" class="hover06 imgBox"></figure>
+		     <figure>  <img src="img/bg-img/2_10.jpg" class="hover06 imgBox"></figure>
+      </div>
+    </div>
+  </div>
+    <!-- ##### Miscellaneous Area Start ###### -->
+	<div class="container-fluid">
+	<section class="testimonial ">
+		 <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="line"></div>
+                        
+                        <h2>Testimonials</h2>
+			 <p>What our customers telling?</p>
+                    </div>
+		<div id="carouselExampleIndicatorss" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img  src="img/bg-img/people1.jpg" alt="First slide"  class="textimonialimg">
+            
+				<p class="textimonialtext">“Efficient, professional, courteous–EXCELLENT experience. Give them a call–you will NOT be disappointed!! Thank you I will never go anywhere else again!”
+
+– Paula, via Facebook</p>
+           
+        </div>
+        <div class="carousel-item">
+            <img  src="img/bg-img/people2.jpg" alt="Second slide" class="textimonialimg">
+			<p class="textimonialtext">“These guys are amazing! Super efficient & good prices. And they actually call back. And they have wonderful customer service! Thank you I will never go anywhere else again!”
+
+– Kim Guard, via Facebook</p>
+        </div>
+        <div class="carousel-item">
+            <img src="img/bg-img/people3.jpg" alt="Third slide"  class="textimonialimg">
+			<p class="textimonialtext">“Very thorough cleaning, a job well done every single time! Reliable, trustworthy, professional and great at what they do!”
+
+– Natalie, via Google</p>
+        </div>
+    </div>
+   
+</div>
+	
+	</section>
+	</div>
+    <!-- ##### Miscellaneous Area End ###### -->
+
+    <!-- ##### Newsletter Area Start ###### -->
+    <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(img/bg-img/6.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="nl-content text-center">
+                        <h2>Subscribe to our newsletter</h2>
+                        <form action="#" method="post">
+                            <input type="email" name="nl-email" id="nlemail" placeholder="Your e-mail">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p>Subscribe and keep in touch with us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ###### -->
+
+    <!-- ##### Footer Area Start ##### -->
+      <footer class="footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Footer Widget -->
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">About Us</h5>
+                                        <!-- Nav -->
+                                        <nav>
+                                            <ul>
+                                                <li><a href="index.html">Homepage</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="services.html">Services &amp; Offers</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                <!-- Single Footer Widget -->
+                                <div class="col-12 col-sm-6 col-lg-6">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">Contact us</h5>
+                                        <div class="row">
+                                            
+                                            <div class="col-3">
+                                                <span style="font-size: 8rem; margin-top:0px;padding-top:-40px;color:white"><i class="fa fa-globe"></i></span>
+                                            </div>
+                                            <div class="col-9">
+                                                <nav>
+                                                    <ul style="color:white;font-size: 1rem; padding-top:50px">
+                                                        
+                                                    
+                                                        <li>2/7890 kumar nagar </li>
+                                                        <li>Near high school</li>
+                                                        <li>Tirupur</li>
+                                                        <li>TamilNadu -675890</li>
+                                                    
+                                                    </ul>
+                                                
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <!-- Nav -->
+                                        
+                                    
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="single-footer-widget mb-100">
+                                        <h5 class="widget-title">Follow us</h5>
+                                   <div class="div" style="margin-top:2rem; padding-top:2rem; cursor:pointer">
+                                    <span  style="color: white; font-size: 1.2rem; ">
+                                        <i style="margin-left:10px;" class="fa fa-whatsapp fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-facebook fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-instagram fa-3x"></i>
+                                        <i style="margin-left:10px;" class="fa fa-youtube fa-3x"></i>
+                                    </span>
+                                   </div>
+                                     
+                                    </div>
+                                </div>
+
+               
+                  
+            </div>
+        </div>
+
+       
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
