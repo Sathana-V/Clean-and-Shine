@@ -37,15 +37,15 @@
 
 ## TECHNOLOGIES USED
 HTML, CSS, Java Script, PHP, mysql
-#Front -end:
+**Front -end:**
 HTML
 CSS
 SCSS
 JAVASCRIPT
 BOOTSTRAP
-#Back-end
+**Back-end**
    PHP
-#Database
+**Database**
   SQL
 
 ## HOSTED LINK
