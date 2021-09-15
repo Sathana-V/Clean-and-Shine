@@ -29,7 +29,7 @@ in each field.
 * Database Configuration=>
     Host=local,User=root,password=``  ``,Database=Cleanandshine
 * after creating the database name click on import.
-* browse the file in directory[].
+* browse the 'database.sql' file in directory[C:\xampp\htdocs\Clean-and-Shine-master].
 * after importing successfully.
 * open any browser and type 
 * For Admin Access click Login in Home page
