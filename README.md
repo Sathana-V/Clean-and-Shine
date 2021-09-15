@@ -31,7 +31,7 @@ in each field.
 * after creating the database name click on import.
 * browse the 'database.sql' file in directory[C:\xampp\htdocs\Clean-and-Shine-master].
 * after importing successfully.
-* open any browser and type 
+* open any browser and type http://localhost/Clean-and-Shine-master/
 * For Admin Access click Login in Home page
 * **Admin login details** username = admin Password=123@admin
 
