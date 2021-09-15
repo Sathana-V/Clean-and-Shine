@@ -108,10 +108,18 @@ $count=mysqli_num_rows($records);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   display:inline-block;
-  width: 99%;
+ 
   
   border-radius: 5px;
   
+  
+}
+@media screen and (max-width 768px)
+{
+  .card {
+    display:block;
+    background-color:blue;
+  }
 }
 
 td{
@@ -197,8 +205,7 @@ img {
                                    
                                 ?>
                                 
-                                 <div class="col-sm-4" style="height:200px;">
-
+                                 
                                     <div class="card">
                                     <h2><?php echo $data['service']; ?></h2>
                                        <div class="card-body">
@@ -244,7 +251,7 @@ img {
                                              
                                           
                                          
-                                       </div>
+                                      
                                             
                                            
                                         </div>

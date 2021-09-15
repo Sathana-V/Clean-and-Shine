@@ -108,8 +108,8 @@ $count=mysqli_num_rows($records);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   display:inline-block;
-  width: 99%;
-  
+ 
+  height:450px;
   border-radius: 5px;
   
 }
@@ -144,6 +144,13 @@ td{
     text-transform:uppercase;
     background-color:rgb(60, 60, 60);
     color:white;
+}
+@media screen and (max-width 768px)
+{
+  .card {
+    display:block;
+    background-color:blue;
+  }
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -193,8 +200,7 @@ img {
                                 {
                                     
                                 ?>
-                                 <div class="col-sm-4" style="height:200px;">
-
+                                
                                     <div class="card">
                                     <h2><?php echo $data['service']; ?></h2>
                                        <div class="card-body">
@@ -248,7 +254,7 @@ img {
                                              
                                           
                                          
-                                       </div>
+                                     
                                             
                                            
                                         </div>
