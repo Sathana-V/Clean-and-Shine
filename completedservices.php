@@ -108,7 +108,7 @@ $count=mysqli_num_rows($records);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   display:inline-block;
-  padding-left:2%;
+  margin-left:2%;
   
   border-radius: 5px;
   
