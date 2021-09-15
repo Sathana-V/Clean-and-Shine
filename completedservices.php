@@ -209,7 +209,7 @@ img {
                                     <div class="card">
                                     <h2><?php echo $data['service']; ?></h2>
                                        <div class="card-body">
-                                                    <table style="background-color:rgb(240, 240, 240);width:100%">
+                                                    <table style="background-color:rgb(240, 240, 240);width:400px;">
                                                     <tbody>
                                                     <tr>
                                                             <td> <h4><b>Order Id  </b></h4></td>
