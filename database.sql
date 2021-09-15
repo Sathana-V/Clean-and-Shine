@@ -1,4 +1,7 @@
 
+create database cleanandshine;
+use cleanandshine;
+
 create table userlist(username varchar(230), password varchar(100));
 insert into userlist VALUES("admin","123@admin");
 
